@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pokemon",
+      "handler": "pokemon.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pokemon/count",
+      "handler": "pokemon.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pokemon/:id",
+      "handler": "pokemon.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pokemon",
+      "handler": "pokemon.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pokemons/:id",
+      "handler": "pokemon.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pokemons/:id",
+      "handler": "pokemon.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

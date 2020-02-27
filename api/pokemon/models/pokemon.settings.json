@@ -1,0 +1,79 @@
+{
+  "connection": "default",
+  "collectionName": "pokemon",
+  "info": {
+    "name": "Pokemon"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "thumbnail": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "audioCry": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "audioDescription": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "audioName": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "types": {
+      "via": "pokemons",
+      "collection": "types",
+      "dominant": true
+    },
+    "evolution": {
+      "model": "pokemon"
+    },
+    "pokemons": {
+      "collection": "pokemon"
+    },
+    "color": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "string"
+    },
+    "family": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string"
+    },
+    "catchRate": {
+      "type": "string"
+    },
+    "hatching": {
+      "type": "string"
+    }
+  }
+}

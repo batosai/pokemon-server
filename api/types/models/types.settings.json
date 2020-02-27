@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "types",
+  "info": {
+    "name": "Types"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "model": "types",
+      "via": "types"
+    },
+    "types": {
+      "columnName": "lows",
+      "collection": "types",
+      "via": "type"
+    },
+    "pokemons": {
+      "collection": "pokemon",
+      "via": "types"
+    }
+  }
+}

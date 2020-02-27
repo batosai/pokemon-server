@@ -1,0 +1,22 @@
+{
+  "connection": "default",
+  "collectionName": "pokedexes",
+  "info": {
+    "name": "Pokedex"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "number": {
+      "type": "integer"
+    },
+    "region": {
+      "model": "region"
+    },
+    "pokemon": {
+      "model": "pokemon"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pokedexes",
+      "handler": "pokedex.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pokedexes/count",
+      "handler": "pokedex.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pokedexes/:id",
+      "handler": "pokedex.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pokedexes",
+      "handler": "pokedex.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pokedexes/:id",
+      "handler": "pokedex.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pokedexes/:id",
+      "handler": "pokedex.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
