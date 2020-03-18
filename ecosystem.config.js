@@ -23,7 +23,7 @@ module.exports = {
       ref  : 'origin/master',
       repo : 'git@github.com:batosai/pokemon-server.git',
       path : '/app/server',
-      'post-deploy' : 'npm install && npx pm2 reload ecosystem.config.js --env production'
+      'post-deploy' : 'npm install && npm audit fix && npx pm2 reload ecosystem.config.js --env production'
     }
   }
 };
