@@ -1,5 +1,5 @@
 {
-  "host": "localhost",
+  "host": "api.pokemon.chaufourier.fr",
   "port": "${process.env.PORT || 1337}",
   "production": true,
   "proxy": {
