@@ -1,4 +1,5 @@
 {
+  "kind": "collectionType",
   "connection": "default",
   "collectionName": "regions",
   "info": {
@@ -17,6 +18,9 @@
       "via": "related",
       "plugin": "upload",
       "required": false
+    },
+    "pokemons": {
+      "collection": "pokemon"
     }
   }
 }
